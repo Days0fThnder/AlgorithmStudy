@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Created by j_rus on 10/5/2016.
  */
-public class interviewCake {
+public class interviewCake2 {
     static Map<Integer, Integer> delivery_ids = new HashMap<>();
 
     static Integer findUnique(int ids[]){

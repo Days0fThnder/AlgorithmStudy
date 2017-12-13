@@ -37,16 +37,19 @@ public class GraphWork {
                     }
                 }
                 node.setAdjList(adjNodes);
-                System.out.println("The data for this "+node.toString());
+                System.out.println("The data for this is "+node.toString());
                 System.out.print("AdjList:");
+                int last_idx = node.getAdjList().size()-1;
                 for (Node adj : node.getAdjList()) {
-                    System.out.println(adj);
+                    if(node.getAdjList().get(last_idx) != adj) {
+                        System.out.print(adj + ",");
+                    }else{
+                        System.out.print(adj);
+                    }
                 }
                 adjNodes.clear();
             }
-
-            System.out.println("////////////////////////");
-            System.out.println("All the graph's node(s)");
+         System.out.println("All the graph's node(s)");
             for(Object n : nodes) {
                 System.out.println(new Node((int) n).toString());
             }

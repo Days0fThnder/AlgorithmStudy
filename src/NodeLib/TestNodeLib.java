@@ -18,11 +18,12 @@ public class TestNodeLib {
         llnodeC.setNext(llnodeD);
         llnodeD.setNext(llnodeE);
 
-        /*LinkedList list = new LinkedList();
-        list.reverseLinkedList(llnodeA);
+        LinkedList list = new LinkedList();
+        /*list.reverseLinkedList(llnodeA);
         LinkedListNode kthNode = list.kthToLastNode(0, llnodeA);
         System.out.println(kthNode.value);
         System.out.println("place holder");*/
+        list.reveseList(llnodeA);
         System.out.print(0^0);
     }
 }

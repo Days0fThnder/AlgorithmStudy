@@ -45,6 +45,20 @@ public class LinkedList {
         }
     }
 
+    public LinkedListNode reveseList(LinkedListNode head){
+        LinkedListNode curr = head;
+        LinkedListNode next;
+        LinkedListNode prev = null;
+        while (curr.next != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        curr.next = prev;
+        return  curr;
+    }
+
     public LinkedListNode kthToLastNode(int k, LinkedListNode head){
         int index = 0;
         LinkedListNode current = head;
