@@ -1,6 +1,6 @@
 package InterviewBits;
 
-import NodeLib.ListNode;
+import nodes.ListNode;
 
 public class LinkedList {
 
