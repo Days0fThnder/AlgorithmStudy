@@ -1,11 +1,17 @@
 package leetCode;
 
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
 
-    TreeNode(int x) {
+    public TreeNode(int x) {
         val = x;
+    }
+
+    public void buildTree(int [] arr){
+        for (int i = 0; i < arr.length ; i++) {
+           // th
+        }
     }
 }
