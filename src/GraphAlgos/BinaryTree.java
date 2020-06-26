@@ -74,7 +74,7 @@ public class BinaryTree {
         return Math.max(leftHeight, rightHeight) + 1;
     }
 
-    public boolean isLeaf(Node node){
+    public static boolean  isLeaf(Node node){
         if(node.left == null && node.right == null){
             return true;
         }else{
@@ -85,7 +85,7 @@ public class BinaryTree {
     public List<Node> getLeaves(Node root){
         if(root == null){
             return null;
-        }else if(isLeaf(root)){
+        }else if(BinaryTree.isLeaf(root)){
             leaves.add(root);
         }else{
             getLeaves(root.left);

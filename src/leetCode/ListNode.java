@@ -35,6 +35,15 @@ public class ListNode {
             }
       }
 
+      public static int listSize(ListNode head){
+            int res = 0;
+            while (head != null){
+                  res++;
+                  head = head.next;
+            }
+            return res;
+      }
+
       @Override
       public String toString() {
             return "ListNode{" +
